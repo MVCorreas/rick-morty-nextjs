@@ -1,10 +1,9 @@
-import CharacterCard from "@/components/CharacterCard";
-
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <CharacterCard />
+     <h1>RICK AND MORTY</h1>
+  
     </div>
   );
 }
