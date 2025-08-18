@@ -16,18 +16,20 @@ export default function Button({
 
   const variantClasses =
     variant === "primary"
-      ? "border border-colour-primary bg-transparent text-colour-primary hover:bg-colour-secondary hover:text-white"
-      : "bg-colour-secondary text-white hover:bg-transparent hover:text-colour-primary hover:border hover:border-colour-primary";
+      ? "border border-primary bg-transparent text-primary hover:bg-secondary hover:text-white"
+      : "bg-secondary text-white hover:bg-transparent hover:text-primary hover:border hover:border-primary";
 
-  const disabledClasses = (disabled || isLoading) 
-    ? "opacity-50 cursor-not-allowed pointer-events-none" 
-    : "";
+  const disabledClasses =
+    disabled || isLoading
+      ? "opacity-50 cursor-not-allowed pointer-events-none"
+      : "";
 
-  const baseClasses = "focus:outline-none rounded-lg font-medium transition-colors duration-200";
+  const baseClasses =
+    "focus:outline-none rounded-lg font-medium transition-colors duration-200";
 
   return (
-    <button 
-      onClick={onClick} 
+    <button
+      onClick={onClick}
       className={`${baseClasses} ${sizeClasses} ${variantClasses} ${disabledClasses}`}
       disabled={disabled || isLoading}
       data-test="button"

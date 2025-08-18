@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,17 +7,11 @@ const config = {
   theme: {
     extend: {
       colors: {
-        'colour-primary': '#3B3B3B',
-        'colour-secondary': '#585660',
-        'colour-tertiary': '#737373',
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        primary: '#5c6ac4',
+        secondary: '#f87171',
+        tertiary: '#737373',
       },
     },
   },
   plugins: [],
 };
-export default config;
